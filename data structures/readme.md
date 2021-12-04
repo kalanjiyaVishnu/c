@@ -1,0 +1,7 @@
+# sorting
+
+## stack
+
+```
+evaluate postfix
+```
