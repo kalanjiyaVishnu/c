@@ -10,7 +10,7 @@ class Stac{
     public static void main(String[] args) {
         Stack<Integer> s = new Stack<>();
         // s.push(11);
-        // s.push(32);
+        // s.push(32);ṇ
         // s.push(21);
         // s.push(3);
         // int arr[]= {11, 13, 21, 3};

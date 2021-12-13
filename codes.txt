@@ -1,0 +1,63 @@
+//problems solving in tree 
+
+
+/// 1.)invert binary tree
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+struct TreeNode* invertTree(struct TreeNode* root){
+     if(!root){
+        return NULL;
+    }
+    
+    // printf("%d",root->val);
+    struct TreeNode* leftTree = invertTree(root->left);
+    struct TreeNode* rightTree = invertTree(root->right);    
+    
+    root->left = rightTree;
+    root->right = leftTree;
+    
+    return root;
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+// check the binary tree is symmetric or not
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     struct TreeNode *left;
+ *     struct TreeNode *right;
+ * };
+ */
+
+bool isHavingSym(struct TreeNode* l,struct TreeNode* r){
+    if(!l && !r)
+        return true;
+    
+    if(!l || !r)
+        return false;
+    
+    if(l->val != r->val)
+        return false;
+    
+    
+    bool isLeftinSym = isHavingSym(l->left,r->right);
+    bool isRightinSym = isHavingSym(l->right,r->left);
+    
+    if(isLeftinSym && isRightinSym)
+        return true;
+    else return false;    
+    
+}
+bool isSymmetric(struct TreeNode* root){
+    return isHavingSym(root->left,root->right);    
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+
