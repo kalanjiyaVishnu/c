@@ -110,6 +110,6 @@ int main()
     // insertAtStart(&head, 2);
     // insertAtStart(&head, 3);
     remove1(&head);
-    // printNode(head);
+    printNode(head);
     return 0;
 }

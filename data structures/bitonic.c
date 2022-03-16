@@ -49,12 +49,13 @@ void maxInBitonic(int arr[], int n)
     // }
 }
 
-void  findSquare(int n)
+void findSquare(int n)
 {
     int l = 1, h = n;
     while (l < h)
     {
         int mid = (l + h) / 2;
+        printf("%d -- %d -- %d\n", l, mid, h);
         if (mid * mid > n)
         {
             h = mid;

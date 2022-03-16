@@ -4,13 +4,13 @@
 int getLength(char *str, char *str1);
 int main()
 {
-    char *str = "Kalanjiya vishnu";
-    char *str1 = "KALANJIYA VISHNU";
+    char *str = "vishnu";
+    char *str1 = "";
     int i = 0, flag = 1;
-    // if (strcmp(str, str1))
-    // {
-    // printf("dsafadsfasdfasdf %d", );
-    // }
+    printf("%d", strcmp(str, str1));
+    if (strcmp(str, str1))
+    {
+    }
     // strcmp(str, str1) == 0 ? printf("Equals ") : printf("not the same");
     int len = getLength(str, str1);
     while (str[i] != '\0' && i < len)

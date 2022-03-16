@@ -6,17 +6,15 @@ class SortAndFind{
          
         Arrays.sort(arr);
 
-
+        
         boolean isFirstPos = true;
         
         for(int i=0;i<arr.length;i++){
             if(arr[i]>0){
                 if(isFirstPos){
                     isFirstPos = false;
-                    if()
+                 
                 }
-
-                if()
             }else continue;
             // System.out.print(" " + arr[i]);
         }

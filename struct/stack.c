@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define SIZE 10
-int top = -1, stack[SIZE] = {0};
+ int top = -1, stack[SIZE] = {0};
 void push();
 void pop();
 void disp();
@@ -8,6 +8,7 @@ int isFull();
 int isEmp();
 void push(int num)
 {
+    printf("%d", size);
     if (isFull())
     {
 
